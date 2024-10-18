@@ -1,5 +1,6 @@
-from .pacmap import *
+from importlib.metadata import version
 
-import pkg_resources
-__version__ = pkg_resources.get_distribution('pacmap').version
-__all__ = ["pacmap"]
+from .pacmap import PaCMAP
+
+__version__ = version("pacmap")
+__all__ = ["PaCMAP"]
